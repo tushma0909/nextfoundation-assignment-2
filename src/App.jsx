@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Navbar/Navbar'
 import Hero from './Hero/Hero' 
 import Footer from './Footer/Footer'
+import Movies from "./Movies/Movies"
 
 
 function App() {
