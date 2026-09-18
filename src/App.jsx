@@ -13,13 +13,11 @@ function App() {
    <BrowserRouter>
     <Navbar></Navbar>
     <Routes>
-<Route path="/" element={<>
-
-    <Hero></Hero>
-    <Footer></Footer></>}/>
-    <Route path="/movies" element ={<Movies/>}/>
+<Route path="/" element={<Hero/>}/>
+ <Route path="/movies" element ={<Movies/>}/>
     
     </Routes>
+     <Footer></Footer>
     </BrowserRouter>
     </>
   )
