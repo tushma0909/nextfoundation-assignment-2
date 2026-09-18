@@ -3,9 +3,9 @@ import{Link} from "react-router-dom"
 
 const Hero = () => {
     return (
-        <div className="min-h-[80vh] bg-black flex items-center">
-            <div className='w-full min-h-[80vh] bg-black/80 flex items-center'>
-            <div  className='max-w-3xl px-8 md:px-16 text-white'>
+        <div className="min-h-[80vh] bg-gradient-to-br from-red via-red-400 to-black flex items-center justify-center">
+            <div className='w-full min-h-[80vh] bg-black/80 flex items-center justify-center'>
+            <div  className='max-w-3xl px-8 md:px-16 text-white text-center'>
 
                 <p className="text-red-500 font-semibold text-lg mb-3">Welcome to MovieExplorer</p>
                 <h1 className="text-5xl md:text-7xl font-bold mb-6">Discover Movies</h1> 
@@ -28,3 +28,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
