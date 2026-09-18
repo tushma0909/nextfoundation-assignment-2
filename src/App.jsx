@@ -1,4 +1,4 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import './App.css'
 import Navbar from './Navbar/Navbar'
 import Hero from './Hero/Hero' 
@@ -8,10 +8,17 @@ import Footer from './Footer/Footer'
 function App() {
 
   return (
-    <>
-     <Navbar></Navbar>
-     <Hero></Hero>
-     <Footer></Footer>
+      <>
+   <BrowserRouter>
+    <Navbar></Navbar>
+    <Routes>
+<Route path="/" element={<>
+
+    <Hero></Hero>
+    <Footer></Footer></>}/>
+    <Route path="/movies" element ={<Movies/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
