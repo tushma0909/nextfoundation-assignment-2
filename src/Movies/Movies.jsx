@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Movies = () => {
 const [search,setSearch]= useState([]);
 const [movies,setMovies]= useState([]);
+const [selectMovie, setSelectMovie] = useState(null)
 const[loading, setLoading] = useState(false)
   const handleSearch = async ()=>{
   const query = search.trim();
